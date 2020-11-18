@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
+import 'package:quest_lgpd/alertNegativo.dart';
 
 import 'package:quest_lgpd/questionario.dart';
 import 'package:quest_lgpd/resultado.dart';
@@ -249,7 +250,11 @@ class _PerguntaAppState extends State<PerguntaApp> {
     return _perguntaSelecionada < _perguntas.length;
   }
 
-  void _responder(int pontuacao) {
+  bool respostaNegativa(texto) {
+    return texto == 'Não';
+  }
+
+  void _responder(int pontuacao, texto) {
     if (temPerguntaSelecionada) {
       setState(() {
         _perguntaSelecionada++;
@@ -275,6 +280,7 @@ class _PerguntaAppState extends State<PerguntaApp> {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
+        backgroundColor: Colors.lightBlueAccent,
         appBar: AppBar(
           title: Center(
             child: Text(
