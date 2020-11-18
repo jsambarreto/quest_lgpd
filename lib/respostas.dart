@@ -4,6 +4,7 @@ class Respostas extends StatelessWidget {
   final String texto;
   final Function funcao;
   final int cores;
+
   Respostas(this.texto, this.funcao, this.cores);
 
   @override

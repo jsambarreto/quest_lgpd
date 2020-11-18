@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:quest_lgpd/comentarios.dart';
 import 'package:quest_lgpd/respostas.dart';
 import 'package:quest_lgpd/perguntas.dart';
 
@@ -23,19 +24,26 @@ class Questionario extends StatelessWidget {
         ? perguntas[perguntaSelecionada]['respostas']
         : null;
     return Center(
-      child: Column(
-        children: <Widget>[
-          Perguntas(
-            perguntas[perguntaSelecionada]['texto'],
-          ),
-          ...respostas.map((resp) {
-            return Respostas(
-              resp['texto'],
-              () => quandoResponder(resp['score']),
-              resp['cor'],
-            );
-          }).toList(),
-        ],
+      child: SingleChildScrollView(
+        child: Column(
+          children: <Widget>[
+            Perguntas(
+              perguntas[perguntaSelecionada]['texto'],
+            ),
+            ...respostas.map((resp) {
+              return Respostas(
+                resp['textoResposta'],
+                () => quandoResponder(
+                  resp['score'],
+                ),
+                resp['cor'],
+              );
+            }).toList(),
+            Comentario(
+              perguntas[perguntaSelecionada]['comentarioPergunta'],
+            )
+          ],
+        ),
       ),
     );
   }
