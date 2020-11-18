@@ -1,81 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
-import 'package:quest_lgpd/data_dummy.dart';
-import 'package:quest_lgpd/questionario.dart';
-import 'package:quest_lgpd/resultado.dart';
+import 'package:quest_lgpd/perguntaapp.dart';
 
-main() => runApp(PerguntaApp());
+main() => runApp(Qlgpd());
 
-class _PerguntaAppState extends State<PerguntaApp> {
-  var _scoreTotal = 0;
-
-  var _perguntaSelecionada = 0;
-  var cores = 0;
-
-  final _perguntas = perguntas;
-
-  bool get temPerguntaSelecionada {
-    return _perguntaSelecionada < _perguntas.length;
-  }
-
-  bool respostaNegativa(texto) {
-    return texto == 'Não';
-  }
-
-  void _responder(int pontuacao, texto) {
-    if (temPerguntaSelecionada) {
-      setState(() {
-        _perguntaSelecionada++;
-        _scoreTotal += pontuacao;
-      });
-    }
-  }
-
-  //void get negativa {
-  //  if (_tipoResposta == 'Não') {
-  //    CaseNegativo(Perguntas());
-  //  }
-  // }
-
-  void _reiniciarQuestionario() {
-    setState(() {
-      _perguntaSelecionada = 0;
-      _scoreTotal = 0;
-    });
-  }
-
+class Qlgpd extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      home: Scaffold(
-        backgroundColor: Colors.lightBlueAccent,
-        appBar: AppBar(
-          title: Center(
-            child: Text(
-              'Aplicação Lei Geral de Proteção de Dados',
-              style: TextStyle(
-                fontSize: 19,
-                color: Colors.white,
-              ),
-            ),
-          ),
-        ),
-        body: temPerguntaSelecionada
-            ? Questionario(
-                perguntas: _perguntas,
-                perguntaSelecionada: _perguntaSelecionada,
-                quandoResponder: _responder,
-              )
-            : Resultado(_scoreTotal, _reiniciarQuestionario),
-      ),
-      debugShowCheckedModeBanner: false,
-    );
-  }
-}
-
-class PerguntaApp extends StatefulWidget {
-  @override
-  _PerguntaAppState createState() {
-    return _PerguntaAppState();
+    return MaterialApp(home: PerguntaApp());
   }
 }
