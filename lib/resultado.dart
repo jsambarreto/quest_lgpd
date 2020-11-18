@@ -16,6 +16,16 @@ class Resultado extends StatelessWidget {
     }
   }
 
+  int get corLetra {
+    if (score < 20) {
+      return 0xff990000;
+    } else if (score < 35) {
+      return 0xffcccc00;
+    } else {
+      return 0xff004c99;
+    }
+  }
+
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -26,7 +36,7 @@ class Resultado extends StatelessWidget {
             fraseResultado,
             style: TextStyle(
               fontSize: 40,
-              color: Colors.blueAccent,
+              color: Color(corLetra),
             ),
             textAlign: TextAlign.center,
           ),
@@ -34,7 +44,7 @@ class Resultado extends StatelessWidget {
         RaisedButton(
           shape:
               RoundedRectangleBorder(borderRadius: BorderRadius.circular(15)),
-          color: Colors.blue,
+          color: Color(corLetra),
           textColor: Colors.white,
           child: Text(
             'Reiniciar ?',

@@ -3,7 +3,8 @@ import 'package:flutter/material.dart';
 class Respostas extends StatelessWidget {
   final String texto;
   final Function funcao;
-  Respostas(this.texto, this.funcao);
+  final int cores;
+  Respostas(this.texto, this.funcao, this.cores);
 
   @override
   Widget build(BuildContext context) {
@@ -12,7 +13,7 @@ class Respostas extends StatelessWidget {
       margin: EdgeInsets.fromLTRB(10, 2, 10, 0),
       child: RaisedButton(
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(15)),
-        color: Colors.blue,
+        color: Color(cores),
         textColor: Colors.white,
         child: Text(
           texto,

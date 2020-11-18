@@ -10,12 +10,26 @@ class Perguntas extends StatelessWidget {
     return Container(
       width: double.infinity,
       margin: EdgeInsets.all(10),
-      child: Text(
-        texto,
-        style: TextStyle(
-          fontSize: 24,
-        ),
-        textAlign: TextAlign.center,
+      child: Column(
+        children: [
+          Card(
+            color: Colors.blueGrey,
+            shadowColor: Colors.brown,
+            shape:
+                RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
+            child: Container(
+              padding: EdgeInsets.all(32),
+              child: Text(
+                texto,
+                style: TextStyle(
+                  fontSize: 24,
+                  color: Colors.white,
+                ),
+                textAlign: TextAlign.center,
+              ),
+            ),
+          ),
+        ],
       ),
     );
   }
