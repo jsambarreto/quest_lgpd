@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:quest_lgpd/main.dart';
 
 class Resultado extends StatelessWidget {
   final int score;
@@ -53,6 +54,24 @@ class Resultado extends StatelessWidget {
             ),
           ),
           onPressed: quandoReiniciarQuestionario,
+        ),
+        RaisedButton(
+          shape:
+              RoundedRectangleBorder(borderRadius: BorderRadius.circular(15)),
+          color: Color(corLetra),
+          textColor: Colors.white,
+          child: Text(
+            'Voltar para a página principal',
+            style: TextStyle(
+              fontSize: 18,
+            ),
+          ),
+          onPressed: () {
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => Qlgpd()),
+            );
+          },
         ),
       ],
     );
