@@ -29,51 +29,57 @@ class Resultado extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-      mainAxisAlignment: MainAxisAlignment.center,
-      children: [
-        Center(
-          child: Text(
-            fraseResultado,
-            style: TextStyle(
-              fontSize: 40,
-              color: Color(corLetra),
-            ),
-            textAlign: TextAlign.center,
-          ),
-        ),
-        RaisedButton(
-          shape:
-              RoundedRectangleBorder(borderRadius: BorderRadius.circular(15)),
-          color: Color(corLetra),
-          textColor: Colors.white,
-          child: Text(
-            'Reiniciar ?',
-            style: TextStyle(
-              fontSize: 18,
+    return Container(
+      width: double.infinity,
+      margin: EdgeInsets.fromLTRB(10, 2, 10, 0),
+      child: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          Center(
+            child: Text(
+              fraseResultado,
+              style: TextStyle(
+                fontSize: 40,
+                color: Color(corLetra),
+              ),
+              textAlign: TextAlign.center,
             ),
           ),
-          onPressed: quandoReiniciarQuestionario,
-        ),
-        RaisedButton(
-          shape:
-              RoundedRectangleBorder(borderRadius: BorderRadius.circular(15)),
-          color: Color(corLetra),
-          textColor: Colors.white,
-          child: Text(
-            'Voltar para a página principal',
-            style: TextStyle(
-              fontSize: 18,
+          SizedBox(height: 10),
+          RaisedButton(
+            shape:
+                RoundedRectangleBorder(borderRadius: BorderRadius.circular(15)),
+            color: Color(corLetra),
+            textColor: Colors.white,
+            child: Text(
+              'Reiniciar ?',
+              style: TextStyle(
+                fontSize: 18,
+              ),
             ),
+            onPressed: quandoReiniciarQuestionario,
           ),
-          onPressed: () {
-            Navigator.push(
-              context,
-              MaterialPageRoute(builder: (context) => Qlgpd()),
-            );
-          },
-        ),
-      ],
+          SizedBox(height: 10),
+          RaisedButton(
+            shape:
+                RoundedRectangleBorder(borderRadius: BorderRadius.circular(15)),
+            color: Color(corLetra),
+            textColor: Colors.white,
+            child: Text(
+              'Voltar para a página principal',
+              style: TextStyle(
+                fontSize: 18,
+              ),
+            ),
+            onPressed: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => Qlgpd()),
+              );
+            },
+          ),
+        ],
+      ),
     );
   }
 }
