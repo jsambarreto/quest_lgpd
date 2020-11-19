@@ -18,6 +18,7 @@ class Perguntas extends StatelessWidget {
             shape:
                 RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
             child: Container(
+              width: double.infinity,
               padding: EdgeInsets.all(32),
               child: Text(
                 texto,
