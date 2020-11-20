@@ -16,7 +16,7 @@ final perguntas = const [
         'score': 1,
         'cor': 0xff990000,
         'comentarioResposta':
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit' //, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum'
+            'Tem certeza? Se você não coletar, armazenar ou processar qualquer tipo de dado pessoal, você não precisa se preocupar com a LGPD. Agora, lembre-se que a definição de dado pessoal é bem ampla – informações de clientes, funcionários e parceiros comerciais podem ser considerados dados pessoais.'
       },
       {
         'textoResposta': 'Parcialmente',
@@ -45,7 +45,7 @@ final perguntas = const [
         'score': 1,
         'cor': 0xff990000,
         'comentarioResposta':
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit' //, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum'
+            'É importante que as pessoas tenham acesso às informações claras sobre como os seus dados pessoais são tratados. Nesse sentido, considere desenvolver uma política de privacidade, que pode ser disponibilizada no seu site e/ou de forma impressa para seus clientes. Essa política deve conter, no mínimo, as seguintes informações:\n\n 1 - o nome e razão social da sua empresa;\n\n 2 - que tipos de dados sua empresa trata, e para quais finalidades;\n\n 3 - quais as finalidades para o tratamento de dados;\n\n 4 - com quem sua empresa compartilha os dados;\n\n 5 - por quanto tempo sua empresa armazena os dados;\n\n 6 - como o titular pode fazer exercer seus direitos sobre os dados (por exemplo, caso ele queira excluir ou alterar os dados); e\n\n 7 - como entrar em contato com a empresa e com o responsável por proteção de dados na empresa.'
       },
       {
         'textoResposta': 'Parcialmente',
@@ -74,7 +74,7 @@ final perguntas = const [
         'score': 1,
         'cor': 0xff990000,
         'comentarioResposta':
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit' //, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum'
+            'Considerando que sua empresa não coleta somente os dados realmente necessários, você deve:\n\n 1 - no momento da coleta dos dados, explicar às pessoas quais as informações são realmente necessárias e quais são opcionais;\n\n 2 - revisar os dados pessoais que a empresa coleta e armazena, decidir quais realmente devem ser tratados e mantidos e quais não são necessários; e\n\n 3 - avaliar os dados pessoais que você possui e destruir, de maneira segura, aqueles que forem excessivos ou que você não precisará utilizar.\n\n Um exemplo pode ajudar como entender melhor e se adequar a esse ponto: uma padaria coleta nomes e endereços de seus clientes, pois são informações necessárias para a entrega semanal de seus produtos, mas também coleta o endereço de e-mail de seus clientes, o que permite que a padaria envie promoções e descontos. Como o envio do e-mail marketing não é essencial para o desenvolvimento do trabalho principal, a padaria deve informar a seus clientes de maneira clara sobre a coleta do email com a finalidade de envio de email marketing e possibilitar que o cliente se descadastre caso não deseje receber promoções.'
       },
       {
         'textoResposta': 'Parcialmente',
@@ -103,14 +103,14 @@ final perguntas = const [
         'score': 1,
         'cor': 0xff990000,
         'comentarioResposta':
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit' //, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum'
+            'Se sua empresa não armazena dados pessoais somente pelo tempo necessário, você deve:\n\n 1 - avaliar e orientar funcionários sobre o tempo que devem ser armazenados os dados pessoais coletados. Lembre-se que essa decisão poderá variar de acordo com o tipo de dado pessoal armazenado e com a justificativa para o seu tratamento;\n\n 2 - destruir, de maneira segura, as informações que você mantém por mais tempo do que o necessário; e\n\n 3 - verificar, regularmente, se você não está armazenando dados pessoais por mais tempo do que o necessário.'
       },
       {
         'textoResposta': 'Parcialmente',
         'score': 3,
         'cor': 0xffcccc00,
         'comentarioResposta':
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit' //, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum'
+            'Segurança da informação nunca possui uma fórmula pronta, e sempre é importante entender o contexto da sua empresa e de suas atividades. Mas algumas dicas podem ser valiosas para toda e qualquer empresa: - bloqueie os computadores quando estiver fora de seu ambiente de trabalho; - utilize senhas em seus computadores e celulares de trabalho, guardando-as em sigilo e alterando-as periodicamente; - tenha um controle de quem acessa as informações nos seus sistemas, quando estas são acessadas, definindo responsabilidades e privilégios de acesso. Ou seja, quem pode acessar o que e quando pode acessar; - quando estiver trabalhando fora da empresa, fique atento ao seu redor: certifique-se de que o objeto do seu trabalho não esteja visível a outras pessoas e tome cuidado ao falar nomes de clientes, colaboradores e sobre casos específicos; - descarte documentos confidenciais em papel utilizando um triturador ou rasgando-os em pequenos pedaços; - tome cuidado ao abrir e-mails e seus anexos, principalmente de desconhecidos; - certifique-se de que documentos físicos que contenham dados pessoais estejam armazenados em locais seguros (gavetas com chaves e cadeados, por exemplo); - registre a identificação dos visitantes de entrada e saída do seu estabelecimento, acompanhando-os sempre que forem transitar em áreas reservadas aos colaboradores da empresa; - utilize criptografia em todos os computadores, celulares e tablets; - somente utilize redes Wi-Fi seguras e confiáveis; - limite o acesso aos dados pessoais àqueles que realmente precisem tê-lo; e - diminua o fluxo de documentos de papel levados para fora de seu estabelecimento.'
       },
     ],
   },
@@ -131,7 +131,7 @@ final perguntas = const [
         'score': 1,
         'cor': 0xff990000,
         'comentarioResposta':
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit' //, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum'
+            'Segurança da informação nunca possui uma fórmula pronta, e sempre é importante entender o contexto da sua empresa e de suas atividades. Mas algumas dicas podem ser valiosas para toda e qualquer empresa:\n\n 1 - bloqueie os computadores quando estiver fora de seu ambiente de trabalho;\n\n 2 - utilize senhas em seus computadores e celulares de trabalho, guardando-as em sigilo e alterando-as periodicamente;\n\n 3 - tenha um controle de quem acessa as informações nos seus sistemas, quando estas são acessadas, definindo responsabilidades e privilégios de acesso. Ou seja, quem pode acessar o que e quando pode acessar;\n\n 4 - quando estiver trabalhando fora da empresa, fique atento ao seu redor: certifique-se de que o objeto do seu trabalho não esteja visível a outras pessoas e tome cuidado ao falar nomes de clientes, colaboradores e sobre casos específicos;\n\n 5 - descarte documentos confidenciais em papel utilizando um triturador ou rasgando-os em pequenos pedaços;\n\n 6 - tome cuidado ao abrir e-mails e seus anexos, principalmente de desconhecidos;\n\n 7 - certifique-se de que documentos físicos que contenham dados pessoais estejam armazenados em locais seguros (gavetas com chaves e cadeados, por exemplo);\n\n 8 - registre a identificação dos visitantes de entrada e saída do seu estabelecimento, acompanhando-os sempre que forem transitar em áreas reservadas aos colaboradores da empresa;\n\n 9 - utilize criptografia em todos os computadores, celulares e tablets;\n\n 10 - somente utilize redes Wi-Fi seguras e confiáveis;\n\n 11 - limite o acesso aos dados pessoais àqueles que realmente precisem tê-lo; e\n\n 12 - diminua o fluxo de documentos de papel levados para fora de seu estabelecimento.'
       },
       {
         'textoResposta': 'Parcialmente',
@@ -160,7 +160,7 @@ final perguntas = const [
         'score': 1,
         'cor': 0xff990000,
         'comentarioResposta':
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit' //, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum'
+            'É importante que sua empresa esteja preparada para atender os direitos dos titulares de dados. Nesse sentido, algumas dicas podem ser úteis:\n\n 1 - certifique-se de que todos os seus colaboradores estão cientes desses direitos;\n\n 2 - capacite sua equipe sobre quais solicitações provavelmente serão mais recebidas e como proceder quando isso acontecer;\n\n 3 - estabeleça, se possível, um mecanismo simples e acessível para que os titulares possam encaminhar as suas solicitações (por exemplo, pelo seu site); e\n\n 4 - no caso de solicitações críticas, como eliminação ou cópia integral dos dados do titular, implemente mecanismos de confirmação da identidade da pessoa que está fazendo a requisição, para evitar fraudes.'
       },
       {
         'textoResposta': 'Parcialmente',
@@ -189,7 +189,7 @@ final perguntas = const [
         'score': 1,
         'cor': 0xff990000,
         'comentarioResposta':
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit' //, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum'
+            'Oriente colaboradores a questionarem também os parceiros comerciais e prestadores de serviços da empresa (como agências de publicidade, escritórios de contabilidade e de advocacia), a respeito de como eles fazem para proteger dados pessoais. Fique atento para os seguintes pontos:\n\n 1 - verifique a política de privacidade e práticas de segurança da informação;\n\n 2 - confira se os contratos possuem obrigações de proteção de dados;\n\n 3 - questione sobre certificações de segurança da informação que são utilizadas; e\n\n 4 - investigue se a empresa já foi multada ou já sofreu investigações que ainda não foram resolvidas.'
       },
       {
         'textoResposta': 'Parcialmente',
@@ -218,7 +218,7 @@ final perguntas = const [
         'score': 1,
         'cor': 0xff990000,
         'comentarioResposta':
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit' //, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum'
+            'A realização de treinamentos e ações de conscientização para colaboradores serve para reforçar as políticas e práticas de privacidade da empresa e é essencial para a criação e sedimentação de uma cultura de privacidade. Algumas dessas ações podem incluir:\n\n 1 - realizar treinamentos internos periódicos, trazendo exemplos e relatos de experiências;\n\n 2 - incentivar a participação em cursos online sobre o tema; e\n\n 3 - desenvolver campanhas com cartazes e panfletos espalhados na empresa. Agora, lembre-se que informações de clientes, funcionários e parceiros comerciais, por exemplo, também podem ser considerados dado pessoal.'
       },
       {
         'textoResposta': 'Parcialmente',

@@ -1,3 +1,5 @@
+import 'dart:ui';
+
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:quest_lgpd/data_dummy.dart';
@@ -42,13 +44,19 @@ class _PerguntaAppState extends State<PerguntaApp> {
           content: SingleChildScrollView(
             child: ListBody(
               children: <Widget>[
-                Text(comentarioResposta),
+                Text(
+                  comentarioResposta,
+                  style: TextStyle(
+                    decorationStyle: TextDecorationStyle.wavy,
+                    fontStyle: FontStyle.italic,
+                  ),
+                ),
               ],
             ),
           ),
           actions: <Widget>[
             TextButton(
-              child: Text('Ok'),
+              child: Text('Próxima pergunta'),
               onPressed: () {
                 Navigator.of(context).pop();
               },
@@ -70,7 +78,6 @@ class _PerguntaAppState extends State<PerguntaApp> {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
-        backgroundColor: Colors.lightBlueAccent,
         appBar: AppBar(
           title: Center(
             child: Text(
