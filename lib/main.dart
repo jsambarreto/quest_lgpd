@@ -3,6 +3,7 @@ import 'package:flutter/widgets.dart';
 import 'package:quest_lgpd/perguntaapp.dart';
 
 main() => runApp(MaterialApp(
+      debugShowCheckedModeBanner: false,
       home: Qlgpd(),
     ));
 
@@ -13,11 +14,12 @@ class Qlgpd extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       home: Container(
         width: double.infinity,
-        margin: EdgeInsets.all(20),
+        margin: EdgeInsets.fromLTRB(0, 20, 0, 0),
         child: Scaffold(
           body: Card(
             child: SingleChildScrollView(
               child: Column(
+                mainAxisAlignment: MainAxisAlignment.spaceAround,
                 children: [
                   Card(
                     color: Colors.blueGrey,
@@ -29,7 +31,7 @@ class Qlgpd extends StatelessWidget {
                       padding: EdgeInsets.all(32),
                       child: Text(
                         //comentario,
-                        'Lorem ipsum dolor sit amet. Quis laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum',
+                        'Responda ao questionário de adequação a LGPD, para identificarmos sua aderência a Legislação de Proteção de Dados Pessoais no Brasil',
                         style: TextStyle(
                           fontSize: 20,
                           color: Colors.white,

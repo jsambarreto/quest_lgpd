@@ -33,7 +33,8 @@ class Resultado extends StatelessWidget {
       width: double.infinity,
       margin: EdgeInsets.fromLTRB(10, 2, 10, 0),
       child: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
+        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+        crossAxisAlignment: CrossAxisAlignment.center,
         children: [
           Center(
             child: Text(
@@ -45,7 +46,6 @@ class Resultado extends StatelessWidget {
               textAlign: TextAlign.center,
             ),
           ),
-          SizedBox(height: 10),
           RaisedButton(
             shape:
                 RoundedRectangleBorder(borderRadius: BorderRadius.circular(15)),
@@ -59,7 +59,6 @@ class Resultado extends StatelessWidget {
             ),
             onPressed: quandoReiniciarQuestionario,
           ),
-          SizedBox(height: 10),
           RaisedButton(
             shape:
                 RoundedRectangleBorder(borderRadius: BorderRadius.circular(15)),
