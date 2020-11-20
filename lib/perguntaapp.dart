@@ -20,13 +20,43 @@ class _PerguntaAppState extends State<PerguntaApp> {
     return texto == 'Não';
   }
 
-  void _responder(int pontuacao, texto) {
+  void _responder(int pontuacao, textoResposta, comentarioResposta) {
     if (temPerguntaSelecionada) {
+      if (textoResposta == 'Não') {
+        _showMyDialog(comentarioResposta);
+      }
       setState(() {
         _perguntaSelecionada++;
         _scoreTotal += pontuacao;
       });
     }
+  }
+
+  Future<void> _showMyDialog(String comentarioResposta) async {
+    return showDialog<void>(
+      context: context,
+      barrierDismissible: false, // user must tap button!
+      builder: (BuildContext context) {
+        return AlertDialog(
+          title: Text('Observações'),
+          content: SingleChildScrollView(
+            child: ListBody(
+              children: <Widget>[
+                Text(comentarioResposta),
+              ],
+            ),
+          ),
+          actions: <Widget>[
+            TextButton(
+              child: Text('Ok'),
+              onPressed: () {
+                Navigator.of(context).pop();
+              },
+            ),
+          ],
+        );
+      },
+    );
   }
 
   void _reiniciarQuestionario() {

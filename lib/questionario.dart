@@ -6,7 +6,7 @@ import 'package:quest_lgpd/perguntas.dart';
 class Questionario extends StatelessWidget {
   final List<Map<String, Object>> perguntas;
   final int perguntaSelecionada;
-  final void Function(int, String) quandoResponder;
+  final void Function(int, String, String) quandoResponder;
 
   Questionario({
     @required this.perguntas,
@@ -23,6 +23,7 @@ class Questionario extends StatelessWidget {
     List<Map<String, Object>> respostas = temPerguntaSelecionada
         ? perguntas[perguntaSelecionada]['respostas']
         : null;
+
     return Center(
       child: SingleChildScrollView(
         child: Column(
@@ -33,8 +34,11 @@ class Questionario extends StatelessWidget {
             ...respostas.map((resp) {
               return Respostas(
                 resp['textoResposta'],
-                () =>
-                    quandoResponder(resp['score'], resp['comentarioResposta']),
+                () => quandoResponder(
+                  resp['score'],
+                  resp['textoResposta'],
+                  resp['comentarioResposta'],
+                ),
                 resp['cor'],
               );
             }).toList(),
