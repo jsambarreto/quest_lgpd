@@ -1,3 +1,4 @@
+import 'dart:math';
 import 'dart:ui';
 
 import 'package:flutter/material.dart';
@@ -22,16 +23,31 @@ class _PerguntaAppState extends State<PerguntaApp> {
     return texto == 'Não';
   }
 
-  void _responder(int pontuacao, textoResposta, comentarioResposta) {
+  void _responder(
+    int pontuacao,
+    textoResposta,
+    comentarioResposta,
+    id_pergunta,
+    id_resposta,
+  ) {
     if (temPerguntaSelecionada) {
-      if (textoResposta == 'Não') {
+      if (textoResposta == 'Não' || textoResposta == 'Parcialmente') {
         _showMyDialog(comentarioResposta);
       }
+      print(exibeRespostas(Random().nextInt(1000), id_pergunta, id_resposta));
       setState(() {
         _perguntaSelecionada++;
         _scoreTotal += pontuacao;
       });
     }
+  }
+
+  String exibeRespostas(
+    int id_empresa,
+    int id_pergunta,
+    int id_resposta,
+  ) {
+    return ('$id_empresa,$id_pergunta, $id_resposta');
   }
 
   Future<void> _showMyDialog(String comentarioResposta) async {

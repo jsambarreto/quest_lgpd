@@ -1,11 +1,17 @@
 import 'package:flutter/material.dart';
 
 class Respostas extends StatelessWidget {
+  final int id_resposta;
   final String texto;
   final Function funcao;
   final int cores;
 
-  Respostas(this.texto, this.funcao, this.cores);
+  Respostas({
+    this.id_resposta,
+    this.texto,
+    this.funcao,
+    this.cores,
+  });
 
   @override
   Widget build(BuildContext context) {

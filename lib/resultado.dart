@@ -38,6 +38,26 @@ class Resultado extends StatelessWidget {
         children: [
           Center(
             child: Text(
+              'Sua pontuação foi de:',
+              style: TextStyle(
+                fontSize: 40,
+                color: Color(corLetra),
+              ),
+              textAlign: TextAlign.center,
+            ),
+          ),
+          Center(
+            child: Text(
+              '${score}pts',
+              style: TextStyle(
+                fontSize: 60,
+                color: Color(corLetra),
+              ),
+              textAlign: TextAlign.center,
+            ),
+          ),
+          Center(
+            child: Text(
               fraseResultado,
               style: TextStyle(
                 fontSize: 40,
