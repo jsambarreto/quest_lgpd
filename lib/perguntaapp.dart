@@ -9,7 +9,7 @@ import 'package:quest_lgpd/resultado.dart';
 
 class _PerguntaAppState extends State<PerguntaApp> {
   var _scoreTotal = 0;
-
+  var id_empresa = Random().nextInt(1000);
   var _perguntaSelecionada = 0;
   var cores = 0;
 
@@ -34,7 +34,7 @@ class _PerguntaAppState extends State<PerguntaApp> {
       if (textoResposta == 'Não' || textoResposta == 'Parcialmente') {
         _showMyDialog(comentarioResposta);
       }
-      print(exibeRespostas(Random().nextInt(1000), id_pergunta, id_resposta));
+      print(exibeRespostas(id_empresa, id_pergunta, id_resposta));
       setState(() {
         _perguntaSelecionada++;
         _scoreTotal += pontuacao;
